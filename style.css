@@ -1,0 +1,745 @@
+/* Global styling */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', Arial, sans-serif;
+    font-family: 'Merriweather', serif;
+
+
+    color: #FFFFFF;
+    background-color: #FFFFFF;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+ul {
+    list-style-type: none;
+}
+
+/* Navbar Styling */
+.atas {
+    width: 100%;
+    height: 70px;
+    background-color: #34495E;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 40px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+.logo-container img {
+    width: 200px;
+    height: auto;
+}
+
+.nav-links {
+    display: flex;
+    gap: 30px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.nav-links li {
+    display: inline-block;
+}
+
+.nav-links a {
+    color: #ECF0F1;
+    font-size: 16px;
+    font-weight: 500;
+    padding: 10px;
+    transition: color 0.3s ease, background-color 0.3s ease;
+}
+
+.nav-links a:hover {
+    color: #E74C3C;
+    background-color: #ECF0F1;
+    border-radius: 5px;
+}
+
+/* Section General Styling */
+section {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 0 20px;
+    position: relative;
+}
+
+
+/* Background Images for Each Section */
+/* Styling untuk section page1 */
+.page1 {
+    background-image: url('New Folder With Items/Screenshot 2024-10-08 at 12.34.17.png');
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    padding-bottom: 100px;
+    background-color: #ECF0F1; /* Jarak di bawah section pertama */
+}
+
+/* Styling untuk section page2 */
+.page2 {
+    position: relative;
+    width: 100%;
+    height: 65vh; /* Tinggi section */
+    background-color: #F4F4F4; /* Warna latar belakang netral */
+    display: flex;
+    justify-content: center; /* Pusatkan konten secara horizontal */
+    align-items: center; /* Pusatkan konten secara vertikal */
+    overflow: hidden; /* Menyembunyikan elemen yang mungkin melampaui batas */
+    text-align: left; /* Meratakan teks judul ke kiri */
+}
+
+.desc_sec_2 {
+    position: absolute; /* Tetap menggunakan posisi absolute */
+    top: 50%; /* Posisi vertikal tengah */
+    left: 50%; /* Posisi horizontal tengah */
+    width: 80%; /* Lebar konten */
+    color: #171717; /* Warna teks */
+    text-align: center; /* Meratakan teks di tengah */
+    transform: translate(-50%, -50%); /* Menyelaraskan dengan lebih baik */
+    border-bottom: 2px solid #a02222; /* Garis di bawah teks */
+    padding-bottom: 20px; /* Jarak bawah */
+}
+
+.desc_sec_2 h3 {
+    font-size: 36px; /* Ukuran font untuk judul */
+    font-weight: bold; /* Menebalkan font judul */
+    margin: 0; /* Menghilangkan margin default untuk judul */
+    text-align: center; /* Meratakan teks judul ke kiri */
+    position: absolute; /* Mengatur posisi judul */
+    top: 10px; /* Jarak dari atas */
+    left: 10px; /* Jarak dari kiri */
+}
+
+.desc_sec_2 p {
+    font-size: 16px; /* Ukuran font untuk tubuh teks */
+    line-height: 1.2; /* Jarak antar baris untuk keterbacaan */
+    margin-top: 100px; /* Memberikan jarak dari judul */
+    margin-bottom: 0 ; /* Menghilangkan margin bawah default */
+    letter-spacing: 0.5px; 
+    /* text-align: ; Meratakan teks paragraf di tengah */
+
+}
+
+.sinopsis{
+    font-size: 25px; /* Ukuran font besar untuk judul */
+    color: #333333; /* Warna teks gelap */
+    margin-bottom: 20px; /* Jarak di bawah judul */
+    text-transform: uppercase; /* Huruf kapital semua */
+    letter-spacing: 1.5px; /* Jarak antar huruf */
+    position: absolute;
+    top: 100px; /* Jarak dari atas section */
+    left: 40px;}
+
+
+.subject{
+    font-size: 25px; /* Ukuran font besar untuk judul */
+    color: #333333; /* Warna teks gelap */
+    margin-bottom: 30px; /* Jarak di bawah judul */
+    text-transform: uppercase; /* Huruf kapital semua */
+    letter-spacing: 1.5px; /* Jarak antar huruf */
+    position: absolute;
+    top: 90px; /* Jarak dari atas section */
+    left: 40px;}
+
+/* Menambahkan gaya responsif */
+@media (max-width: 768px) {
+    .desc_sec_2 {
+        width: 90%; /* Lebar lebih besar di layar kecil */
+    }
+    
+    .desc_sec_2 h3 {
+        font-size: 28px; /* Ukuran font judul lebih kecil di layar kecil */
+    }
+
+    .desc_sec_2 p {
+        font-size: 14px; /* Ukuran font paragraf lebih kecil di layar kecil */
+    }
+}
+
+
+/* page free */
+/* Styling untuk Section Studi */
+.pagefree {
+    background-color: #F4F4F4; /* Warna latar belakang yang lembut */
+    width: 100%;
+    height: 20vh;
+    text-align: left; /* Pusatkan konten */
+}
+
+.studiguide {
+    font-size: 25px; /* Ukuran font besar untuk judul */
+    font-weight: bold;
+    color: #333333; /* Warna teks gelap */
+    margin-bottom: 20px; /* Jarak di bawah judul */
+    text-transform: uppercase; /* Huruf kapital semua */
+    letter-spacing: 1.5px; /* Jarak antar huruf */
+    position: absolute;
+    top: 100px; /* Jarak dari atas section */
+    left: 40px; /* Jarak dari kiri section */
+}
+
+/* Styling untuk Judul Studi */
+.studiguide::after {
+    content: "";
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    width: 80px; /* Panjang garis */
+    height: 4px; /* Ketebalan garis */
+    
+}
+
+/* Styling untuk Tombol Download */
+.download {
+    position: absolute;
+    background-color: #2C3E50; /* Warna biru gelap yang lebih kalem */
+    color: #ffffff; /* Teks putih */
+    font-family: 'Montserrat', sans-serif; /* Font ramping untuk kesan minimalis */
+    font-size: 12px; /* Ukuran font sedikit lebih besar untuk keterbacaan */
+    font-weight: 500; /* Berat font sedang untuk kesan modern */
+    padding: 8px 20px; /* Padding lebih kecil */
+    border: none;
+    border-radius: 3px; /* Sudut melengkung lebih kecil */
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    top: 100px; /* Jarak di bawah judul studi */
+    left: 250px; /* Jarak dari kiri section */
+}
+
+.download:hover {
+    background-color: #338052; /* Warna lebih gelap saat hover */
+    transform: translateY(-2px); /* Efek floating saat dihover */
+}
+
+/* Styling untuk Tombol Download *
+
+
+/* Styling untuk section page3 */
+
+
+
+.page3 {
+    background-image: url('New Folder With Items/Screenshot 2024-10-08 at 12.32.58.png');
+    position: relative;
+    width: 100%;
+    height: 80vh;
+    /* background-color: #F4F4F4; Warna latar belakang netral */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-position: center top;    
+    background-size: cover; /* Tetap mempertahankan ukuran gambar */
+
+}
+
+
+/* Efek hover pada tombol */
+.donwload:hover {
+    background-color: #FFFFFF; /* Ubah warna latar belakang saat hover */
+    color: #D58E8E; /* Ubah warna teks saat hover */
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.4); /* Tingkatkan bayangan saat hover */
+}
+
+
+/* styeleng pGE 4 */
+.page4 {
+    background-color: #ECF0F1;
+}
+
+.image-container {
+    display: flex;
+    justify-content: center;
+    gap: 80px; /* Jarak antar gambar */
+    margin-top: 5px;
+    transform: translate(-1%,5%);
+
+}
+
+.image-item {
+    font-family: 'Merriweather', serif;
+
+    display: inline-block;
+    text-align: center; /* Mengatur teks berada di tengah */
+    width: 240px; /* Lebar kontainer agar gambar dan teks berada di dalam batas */
+}
+
+.image-item img {
+    width: 220px; /* Ukuran gambar */
+    height: 220px; /* Ukuran gambar */
+    border-radius: 50%;
+    object-fit: cover; /* Memastikan gambar sesuai dalam lingkaran */
+    /* border: 3px solid #171717; Garis tepi di sekitar gambar (opsional) */
+    display: block; /* Menyimpan gambar tetap di blok tersendiri */
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.image-item h3 {
+    margin-top: 20px; /* Jarak antara gambar dan teks */
+    font-size: 18px;
+    color: #171717; /* Warna teks */
+    text-align: left;
+}
+
+.image-item p {
+    margin-top: 10px;
+    font-size: 16px;
+    line-height: 1.2; /* Menambah jarak antar baris agar lebih nyaman dibaca */
+    color: #333333; /* Warna teks yang mudah dibaca, bisa diubah sesuai kebutuhan */
+    text-align: left;
+    font-weight: normal;
+    letter-spacing: 0.2px
+}
+
+
+
+/* Styling untuk section page5 */
+.page5{
+    position: relative;
+    width: 100%;
+    height: 65vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url('New Folder With Items/Screenshot 2024-10-08 at 12.51.42.png');
+    /* margin-top: 200px;  */
+}
+
+
+/* styling page 6 */
+.page6 {
+    background-color: #ECF0F1;
+}
+
+.image-container_6 {
+    display: flex;
+    justify-content: center;
+    gap: 80px; /* Jarak antar gambar */
+    margin-top: 5px;
+    transform: translate(-1%,-1%);
+
+}
+
+/* styling 7 */
+.page7{
+    position: relative;
+    width: 100%;
+    height: 65vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url('New Folder With Items/Screenshot 2024-10-08 at 12.31.04.png');
+    background-position: center center; /* Posisi gambar di tengah */
+   
+   
+    /* background-size: contain; Pastikan gambar sesuai dengan ukuran frame tanpa dipotong */
+    /* background-repeat: no-repeat; Hindari pengulangan gambar */
+    /* margin-top: 200px;  */
+}
+
+.image-container_7 {
+    display: flex;
+    justify-content: center;
+    gap: 80px; /* Jarak antar gambar */
+    margin-top: 5px;
+    transform: translate(-1%,-1%);
+
+}
+
+/* halam 9 */
+.page9 {
+    position: relative;
+    width: 100%;
+    height: 65vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url('New Folder With Items/Screenshot 2024-10-08 at 12.31.47.png');    background-position: center bottom; /* Menampilkan bagian tengah ke bawah gambar */
+    background-size: cover;
+}
+
+    
+
+/* halaman 10 */
+/* Styling untuk section Archive_pendek */
+
+
+.sec_archive{
+    font-size: 25px; /* Ukuran font besar untuk judul */
+    font-weight: bold;
+    color: #333333; /* Warna teks gelap */
+    margin-bottom: 20px; /* Jarak di bawah judul */
+    text-transform: uppercase; /* Huruf kapital semua */
+    letter-spacing: 1.5px; /* Jarak antar huruf */
+    position: absolute;
+    top: 100px; /* Jarak dari atas section */
+    left: 40px; /* Jarak dari kiri section */
+}
+
+.archive_pendek {
+    display: grid;
+    gap: 20px;
+    padding: 60px;
+    align-items: start; /* Menyelaraskan elemen di atas */
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* Membuat 3 kolom */
+    grid-template-rows: repeat(3, auto); /* Membuat 3 baris */
+    height:auto;
+    padding-top: 170px;
+    padding-bottom: 0;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+
+.archive_panjang {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); /* Sesuaikan nilai 200px sesuai kebutuhan */
+    gap: 20px;
+    padding: 60px;
+    align-items: start; /* Menyelaraskan elemen di atas */
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* Membuat 3 kolom */
+    grid-template-rows: repeat(2, auto); /* Membuat 3 baris */
+    height:auto;
+    padding-top: 0;
+    padding-bottom: 0;
+    margin-top: 0;
+    margin-bottom: 0;
+    
+}
+
+.archive_agak_panjang {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); /* Sesuaikan nilai 200px sesuai kebutuhan */
+    gap: 20px;
+    padding: 60px;
+    align-items: start; /* Menyelaraskan elemen di atas */
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* Membuat 3 kolom */
+    grid-template-rows: repeat(3, auto); /* Membuat 3 baris */
+    height:auto;
+    padding-top: 0;
+    padding-bottom: 0;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+/* Styling untuk section archive */
+.archive {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); /* Sesuaikan nilai 200px sesuai kebutuhan */
+    gap: 20px;
+    padding: 60px;
+    align-items: start; /* Menyelaraskan elemen di atas */
+    display: grid;
+    grid-template-columns: repeat(1, 1fr); /* Membuat 3 kolom */
+    grid-template-rows: repeat(3, auto); /* Membuat 3 baris */
+    height:auto;
+    padding-top: px;
+    padding-bottom: 0;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.archive-image {
+    width: 100%; /* Lebar gambar mengikuti ukuran kolom */
+    height: 200px; /* Menetapkan tinggi gambar agar konsisten */
+    object-fit: cover; /* Memastikan gambar menutupi area dan dipotong jika perlu */
+    border-radius: 8px; /* Sudut membulat */
+    margin-bottom: 15px; /* Jarak antara gambar dan teks */
+    object-position: top;
+    transition: transform 0.3s ease; /* Tambahkan transisi untuk efek halus */
+}
+
+.archive-image:hover {
+    transform: scale(1.05); /* Membesarkan gambar sedikit ketika disentuh */
+}
+.archive-item {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    position: relative;
+    overflow: visible;
+    border-radius: 8px;
+    height: auto;
+    box-sizing: border-box;
+    flex-wrap: wrap; /* Tambahkan ini untuk memastikan konten dapat membungkus */
+}
+
+.archive-item .description {
+    overflow: visible;
+    white-space: normal;
+}
+
+.archive-item .title, 
+.archive-item .subtitle {
+    color: #444;
+    text-align: left;
+}
+
+
+.archive-item .title {
+    font-size: 18px;
+    font-weight: bold;
+}
+.archive-item .subtitle {
+    font-size: 12px;
+    color: #666;
+}
+
+.archive-item .description {
+    margin-top: 10px;
+    font-size: 15px;
+    line-height: 1.2;
+    color: #333;
+    text-align: left;
+    overflow: visible;
+    overflow: visible; /* Teks tidak akan terpotong */
+
+}
+
+
+/* arsip pjgg */
+
+.arsp_pjg {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); /* Sesuaikan nilai 200px sesuai kebutuhan */
+
+    gap: 20px;
+    padding: 20px;
+    align-items: start; /* Menyelaraskan elemen di atas */
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* Membuat 3 kolom */
+    grid-template-rows: repeat(3, auto); /* Membuat 3 baris */
+    height: auto;
+    padding-top: 0;
+    padding-bottom: 0;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+
+.archive_pjg-item {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start; /* Pastikan elemen di atas */
+    position: relative;
+    overflow: hidden;
+    border-radius: 8px;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+
+/* .archive-item img {
+    width: 100%;
+    height: 100px;
+    object-fit: cover;
+    object-position: top;
+    display: block;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+} */
+
+.archive_pjg-item .title_pjg, 
+.archive_pjg-item .subtitle_pjg {
+    color: #444;
+    text-align: left;
+}
+
+.archive_pjg-item .title_pjg {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.archive_pjg-item .subtitle_pjg {
+    font-size: 14px;
+    color: #666;
+}
+
+.description1 {
+    flex-grow: 1; /* Membuat deskripsi mengisi ruang yang tersedia */
+    font-size: 15px;
+    line-height: 1.2;
+    color: #333;
+    text-align: left;
+    margin-top: 10px;
+}
+
+.description2 {
+    flex-grow: 1; /* Membuat deskripsi mengisi ruang yang tersedia */
+    font-size: 15px;
+    line-height: 1.2;
+    color: #333;
+    text-align: left;
+    font-style: italic;
+    margin-top: 10px;
+}
+
+/* Footer Styling */
+.footer {
+    background-color: #333; /* Warna background footer */
+    color: #f4f4f4; /* Warna teks utama */
+    padding: 40px 0 20px; /* Padding atas dan bawah footer */
+    font-size: 16px; /* Ukuran font teks footer */
+    height: auto; /* Tinggi otomatis sesuai konten */
+}
+
+/* Footer Container */
+.footer-container {
+    display: flex; /* Mengatur layout fleksibel */
+    justify-content: space-between; /* Memberi jarak antar elemen */
+    max-width: 1200px; /* Lebar maksimum container */
+    margin: 0 auto; /* Pusatkan container secara horizontal */
+    padding: 0 20px; /* Padding horizontal untuk sisi kiri dan kanan */
+    flex-wrap: wrap; /* Membungkus elemen jika layar lebih kecil */
+}
+
+/* Footer Sections */
+.footer-section {
+    flex: 1; /* Membagi area secara proporsional */
+    min-width: 200px; /* Lebar minimum setiap section */
+    margin: 10px 0; /* Margin atas dan bawah untuk jarak antar section */
+}
+
+.footer-section h2 {
+    font-size: 18px; /* Ukuran font judul */
+    margin-bottom: 15px; /* Jarak bawah dari judul ke konten */
+    color: #f9f9f9; /* Warna teks judul */
+    text-align: center; /* Teks judul berada di tengah */
+}
+
+.footer-section ul {
+    list-style: none; /* Menghilangkan bullet pada list */
+    padding: 0; /* Menghapus padding default */
+}
+
+.footer-section ul li {
+    margin-bottom: 10px; /* Jarak antar item dalam list */
+}
+
+.footer-section p,
+.footer-section ul,
+.footer-section a {
+    color: #d1d1d1; /* Warna teks pada paragraf, list, dan tautan */
+}
+
+
+
+/* Footer Bottom */
+.footer-bottom {
+    text-align: center;
+    margin-top: 20px;
+    color: #d1d1d1;
+    font-size: 14px;
+}
+
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .footer-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .footer-section {
+        text-align: center;
+        margin: 10px 0;
+    }
+}
+
+
+
+
+/* Responsiveness for smaller devices */
+@media (max-width: 768px) {
+    .desc_sec_2 {
+        max-width: 80%;
+        top: 10%;
+        left: 5%;
+        font-size: 18px;
+        padding: 15px;
+    }
+
+    .img1_sec_2 {
+        width: 80%;
+    }
+}
+
+/* Modal (background) */
+/* Modal (background) */
+/* Modal (background) */
+.modal {
+    display: none; 
+    position: fixed; 
+    z-index: 1; 
+    padding-top: 100px; 
+    left: 0;
+    top: 0;
+    width: 100%; 
+    height: 100%; 
+    overflow: auto; 
+    background-color: rgb(0,0,0); 
+    background-color: rgba(0,0,0,0.9); 
+  }
+  
+  /* Modal Content (image) */
+  .modal-content {
+    margin: auto;
+    display: block;
+    width: 80%;
+    max-width: 700px;
+    
+  }
+  
+  /* Caption of Modal Image */
+
+  
+  /* Add Animation */
+.modal-content  { 
+    animation-name: zoom;
+    animation-duration: 0.6s;
+  }
+  
+@keyframes zoom {
+    from {transform:scale(0)} 
+    to {transform:scale(1)}
+  }
+  
+  /* The Close Button */
+  .close {
+    position: absolute;
+    top: 15px;
+    right: 35px;
+    color: #f1f1f1;
+    font-size: 40px;
+    font-weight: bold;
+    transition: 0.3s;
+  }
+  
+  .close:hover,
+  .close:focus {
+    color: #bbb;
+    text-decoration: none;
+    cursor: pointer;
+  }
+
+html {
+    scroll-behavior: smooth;
+}
